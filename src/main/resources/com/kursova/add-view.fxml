@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="430.0" prefWidth="310.0" style="-fx-background-color: #accde3;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.kursova.AddTicket">
+   <children>
+      <AnchorPane prefHeight="430.0" prefWidth="325.0">
+         <children>
+            <TextField fx:id="enter_destination" layoutX="73.0" layoutY="75.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="enter_departure" layoutX="73.0" layoutY="129.0" prefHeight="25.0" prefWidth="167.0" />
+            <TextField fx:id="enter_flight_number" layoutX="73.0" layoutY="174.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="82.0" layoutY="58.0" text="Введіть пункт призначення" />
+            <Label layoutX="81.0" layoutY="112.0" text="Введіть пункт відправлення" />
+            <Label layoutX="120.0" layoutY="158.0" text="Номер рейсу" />
+            <Label layoutX="58.0" prefHeight="35.0" prefWidth="210.0" text="Додати заявку до списку" textAlignment="CENTER">
+               <font>
+                  <Font size="18.0" />
+               </font>
+            </Label>
+            <DatePicker fx:id="enter_datePicker" layoutX="73.0" layoutY="214.0" prefHeight="25.0" prefWidth="167.0" promptText="Виберіть дату відправлення" />
+            <TextField fx:id="enter_passengerName" layoutX="73.0" layoutY="267.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="96.0" layoutY="249.0" text="Введіть ім'я пасажира" />
+            <TextField fx:id="enter_flight_duration" layoutX="73.0" layoutY="318.0" prefHeight="25.0" prefWidth="167.0" />
+            <Label layoutX="104.0" layoutY="300.0" text="Час польоту(годин)" />
+            <Button fx:id="done" layoutX="135.0" layoutY="369.0" mnemonicParsing="false" onAction="#onDoneClick" text="Додати" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
